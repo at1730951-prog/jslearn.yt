@@ -33,4 +33,28 @@ const outsideTemp = null //object
 
 //}
 
-console.log(typeof scoreValue);
+//console.log(typeof scoreValue);
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+// stack(memory)=>primitive, heap(memory)=> non-primitive  => call by reference(orignalvalue)
+
+//let myYoutubename = "aaryanrajput@.com"
+
+//let anothername = "myYoutubename"
+//anothername = "chaiaurcode"
+
+//console.log(myYoutubename);
+//console.log(anothername);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@bl"
+}
+
+let userTwo = userOne
+userTwo.email = "aaryan@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
